@@ -1,0 +1,19 @@
+{
+  "name": "message_sender",
+  "version": "1.0.0",
+  "description": "A web socket server for consuming and forwarding messages from couch db",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nano": "^9.0.3",
+    "ws": "^7.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
