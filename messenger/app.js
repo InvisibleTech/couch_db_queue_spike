@@ -15,7 +15,7 @@ app.post('/messages', (req, res) => {
   const message = {
     created_ts: Date.now(),
     type: 'message',
-    status: 'posted',
+    status: 'queued',
     msg_body: { ...req.body, id },
   };
 
@@ -33,5 +33,7 @@ app.post('/messages', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8888, () =>
-  console.log(`Example app listening on port ${process.env.PORT || 8888}!`)
+  console.log(`Queuing app listening on port ${process.env.PORT || 8888}!`)
 );
+
+exports.app = app;
