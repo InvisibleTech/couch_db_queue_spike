@@ -1,2 +1,1 @@
-# giggly_robots
-Just some hacks and pocs for a spike. 
+# CouchDB Store And Forward Queue
