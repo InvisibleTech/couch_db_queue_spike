@@ -1,4 +1,4 @@
-# Simple POC for Store And Forward Messaging With Couchdb 
+# Simple POC for Store And Forward Messaging With Couchdb
 This was project was used to spike out an idea of having an expiring store and forward message system. The basis is couchcb changes log. This is not meant for use with critical and non-idempotent task requests. It targets event processing for getting data for real world events where some rules apply:
 
 * The sending system has a don't know/don't care policy for data sent
